@@ -92,6 +92,8 @@ const emBreve: Game[] = [
   }
 ]
 
+const ola = 'ola'
+
 const Home = () => (
   <>
     <Banner />
