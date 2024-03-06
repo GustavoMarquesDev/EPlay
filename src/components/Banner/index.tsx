@@ -1,8 +1,5 @@
-import { useEffect, useState } from 'react'
-
 import { Imagem, Titulo, Precos } from './styles'
 import Tag from '../Tag'
-import { Game } from '../../pages/Home'
 
 import { formataPreco } from '../ProductsList'
 import { ButtonLink } from '../Button/styles'

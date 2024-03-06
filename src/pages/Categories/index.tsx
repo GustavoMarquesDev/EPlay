@@ -1,7 +1,4 @@
-import { useEffect, useState } from 'react'
 import ProductList from '../../components/ProductsList'
-
-import { Game } from '../Home'
 
 import * as S from '../../services/api'
 
@@ -15,14 +12,30 @@ const Categories = () => {
   if (actionGames && fightGames && rpgGames && simulationGames && sportGames) {
     return (
       <>
-        <ProductList games={actionGames} background="black" title="Ação" />
-        <ProductList games={sportGames} background="gray" title="Esportes" />
-        <ProductList games={fightGames} background="black" title="Luta" />
-        <ProductList games={rpgGames} background="gray" title="RPG" />
+        <ProductList
+          games={actionGames}
+          background="black"
+          title="Ação"
+          id="action"
+        />
+        <ProductList
+          games={sportGames}
+          background="gray"
+          title="Esportes"
+          id="sports"
+        />
+        <ProductList
+          games={fightGames}
+          background="black"
+          title="Luta"
+          id="fight"
+        />
+        <ProductList games={rpgGames} background="gray" title="RPG" id="rpg" />
         <ProductList
           games={simulationGames}
           background="black"
           title="Simulação"
+          id="simulation"
         />
       </>
     )
