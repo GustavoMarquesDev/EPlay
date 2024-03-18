@@ -147,6 +147,18 @@ const Checkout = () => {
     const calculateInstallments = () => {
       const installmentsArray: Installment[] = []
 
+      // SE FOSSE FAZER COM O FOREACH SERIA DESSA MANEIRA
+
+      // const parcelas = [1,2,3,4,5,6]
+      // parcelas.forEach((parcela) => {
+      //   installmentsArray.push({
+      //     quantity: parcela,
+      //     amount: totalPrice / parcela,
+      //     formattedAmount: parseToBrl(totalPrice / parcela)
+      //   })
+      // }
+      // return installmentsArray
+
       for (let i = 1; i <= 6; i++) {
         installmentsArray.push({
           quantity: i,
@@ -375,7 +387,7 @@ const Checkout = () => {
                         />
                       </S.InputGroup>
                       <S.InputGroup maxWidth="123px">
-                        <label htmlFor="expiresMonth">Mês do vencimento</label>
+                        <label htmlFor="expiresMonth">Mês do expiração</label>
                         <input
                           type="text"
                           id="expiresMonth"
@@ -389,7 +401,7 @@ const Checkout = () => {
                         />
                       </S.InputGroup>
                       <S.InputGroup maxWidth="123px">
-                        <label htmlFor="expiresYear">Ano de vencimento</label>
+                        <label htmlFor="expiresYear">Ano de expiração</label>
                         <input
                           type="text"
                           id="expiresYear"

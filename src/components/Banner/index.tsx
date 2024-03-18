@@ -4,12 +4,13 @@ import { useGetFeatureGameQuery } from '../../services/api'
 import Tag from '../Tag'
 import { ButtonLink } from '../Button/styles'
 import * as S from './styles'
+import Loader from '../Loader'
 
 const Banner = () => {
   const { data: game } = useGetFeatureGameQuery()
 
   if (!game) {
-    return <h3>Carregando...</h3>
+    return <Loader />
   }
 
   return (
