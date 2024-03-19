@@ -1,5 +1,3 @@
-import { Game } from '../pages/Home'
-
 // FUNÇÃO PARA CONVERSÃO DE MOEDA
 export const parseToBrl = (amount = 0) => {
   return new Intl.NumberFormat('pt-BR', {
